@@ -138,7 +138,8 @@ function! s:MoveLineHalfPageDown() range
 endfunction
 
 function! s:MoveKey(key)
-    return '<' . g:move_key_modifier . '-' . a:key . '>'
+    "return '<' . g:move_key_modifier . '-' . a:key . '>'
+    return '<Esc>' . a:key
 endfunction
 
 
